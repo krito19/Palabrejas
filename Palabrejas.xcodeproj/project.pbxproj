@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		418B4A141EC1102A002136B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A131EC1102A002136B2 /* AppDelegate.swift */; };
-		418B4A161EC1102A002136B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A151EC1102A002136B2 /* ViewController.swift */; };
 		418B4A191EC1102A002136B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B4A171EC1102A002136B2 /* Main.storyboard */; };
 		418B4A1C1EC1102A002136B2 /* Palabrejas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A1A1EC1102A002136B2 /* Palabrejas.xcdatamodeld */; };
 		418B4A1E1EC1102A002136B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418B4A1D1EC1102A002136B2 /* Assets.xcassets */; };
 		418B4A211EC1102A002136B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418B4A1F1EC1102A002136B2 /* LaunchScreen.storyboard */; };
+		418B4A331EC119E7002136B2 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A311EC119E7002136B2 /* Word+CoreDataClass.swift */; };
+		418B4A341EC119E7002136B2 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A321EC119E7002136B2 /* Word+CoreDataProperties.swift */; };
+		418B4A3A1EC11B8A002136B2 /* CreateWordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A391EC11B8A002136B2 /* CreateWordInteractor.swift */; };
+		418B4A3C1EC11BC3002136B2 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A3B1EC11BC3002136B2 /* HomePresenter.swift */; };
+		418B4A411EC11C18002136B2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A401EC11C18002136B2 /* HomeController.swift */; };
+		418B4A451EC1211A002136B2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B4A441EC1211A002136B2 /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		418B4A101EC1102A002136B2 /* Palabrejas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palabrejas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B4A131EC1102A002136B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		418B4A151EC1102A002136B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		418B4A181EC1102A002136B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		418B4A1B1EC1102A002136B2 /* Palabrejas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Palabrejas.xcdatamodel; sourceTree = "<group>"; };
 		418B4A1D1EC1102A002136B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418B4A201EC1102A002136B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		418B4A221EC1102A002136B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418B4A311EC119E7002136B2 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataClass.swift"; path = "../Model/Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		418B4A321EC119E7002136B2 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataProperties.swift"; path = "../Model/Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		418B4A391EC11B8A002136B2 /* CreateWordInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateWordInteractor.swift; path = Interactor/CreateWordInteractor.swift; sourceTree = "<group>"; };
+		418B4A3B1EC11BC3002136B2 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Presentar/HomePresenter.swift; sourceTree = "<group>"; };
+		418B4A401EC11C18002136B2 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = Controlles/HomeController.swift; sourceTree = "<group>"; };
+		418B4A441EC1211A002136B2 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = DB/DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,84 @@
 		418B4A121EC1102A002136B2 /* Palabrejas */ = {
 			isa = PBXGroup;
 			children = (
+				418B4A351EC119FC002136B2 /* Views */,
+				418B4A371EC11AC7002136B2 /* Presenters */,
+				418B4A381EC11ADC002136B2 /* Interactors */,
+				418B4A431EC120D4002136B2 /* DB */,
+				418B4A2C1EC112FA002136B2 /* Entities */,
+				418B4A361EC11AAF002136B2 /* Resourses */,
 				418B4A131EC1102A002136B2 /* AppDelegate.swift */,
-				418B4A151EC1102A002136B2 /* ViewController.swift */,
-				418B4A171EC1102A002136B2 /* Main.storyboard */,
-				418B4A1D1EC1102A002136B2 /* Assets.xcassets */,
-				418B4A1F1EC1102A002136B2 /* LaunchScreen.storyboard */,
-				418B4A221EC1102A002136B2 /* Info.plist */,
-				418B4A1A1EC1102A002136B2 /* Palabrejas.xcdatamodeld */,
 			);
 			path = Palabrejas;
+			sourceTree = "<group>";
+		};
+		418B4A2C1EC112FA002136B2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A1A1EC1102A002136B2 /* Palabrejas.xcdatamodeld */,
+				418B4A311EC119E7002136B2 /* Word+CoreDataClass.swift */,
+				418B4A321EC119E7002136B2 /* Word+CoreDataProperties.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		418B4A351EC119FC002136B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A3E1EC11BD5002136B2 /* Controllers */,
+				418B4A3D1EC11BCF002136B2 /* UI */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		418B4A361EC11AAF002136B2 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A1D1EC1102A002136B2 /* Assets.xcassets */,
+				418B4A221EC1102A002136B2 /* Info.plist */,
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
+		418B4A371EC11AC7002136B2 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A3B1EC11BC3002136B2 /* HomePresenter.swift */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		418B4A381EC11ADC002136B2 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A391EC11B8A002136B2 /* CreateWordInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		418B4A3D1EC11BCF002136B2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A171EC1102A002136B2 /* Main.storyboard */,
+				418B4A1F1EC1102A002136B2 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		418B4A3E1EC11BD5002136B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A401EC11C18002136B2 /* HomeController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		418B4A431EC120D4002136B2 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				418B4A441EC1211A002136B2 /* DBManager.swift */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418B4A161EC1102A002136B2 /* ViewController.swift in Sources */,
 				418B4A1C1EC1102A002136B2 /* Palabrejas.xcdatamodeld in Sources */,
+				418B4A3A1EC11B8A002136B2 /* CreateWordInteractor.swift in Sources */,
+				418B4A411EC11C18002136B2 /* HomeController.swift in Sources */,
+				418B4A451EC1211A002136B2 /* DBManager.swift in Sources */,
 				418B4A141EC1102A002136B2 /* AppDelegate.swift in Sources */,
+				418B4A3C1EC11BC3002136B2 /* HomePresenter.swift in Sources */,
+				418B4A341EC119E7002136B2 /* Word+CoreDataProperties.swift in Sources */,
+				418B4A331EC119E7002136B2 /* Word+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +390,7 @@
 				418B4A271EC1102A002136B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
